@@ -4,8 +4,10 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.Instant;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 @RequiredArgsConstructor
+@ToString
 public final class ProductOf implements Product {
     private final String name;
 
