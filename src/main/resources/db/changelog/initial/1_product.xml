@@ -12,7 +12,7 @@
             <column name="price" type="MONEY">
                 <constraints nullable="false"/>
             </column>
-            <column name="created_dttm" type="TIMESTAMP" defaultValueComputed="now">
+            <column name="created_dttm" type="TIMESTAMP">
                 <constraints nullable="false"/>
             </column>
         </createTable>
