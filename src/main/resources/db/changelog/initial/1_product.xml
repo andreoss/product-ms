@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="1_product" failOnError="false" author="andreoss@sdf.org">
+        <createTable tableName="PRODUCT">
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="price" type="MONEY">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_dttm" type="TIMESTAMP" defaultValueComputed="now">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <comment>
+            Products
+        </comment>
+    </changeSet>
+</databaseChangeLog>
