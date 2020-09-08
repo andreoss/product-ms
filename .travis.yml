@@ -1,5 +1,8 @@
 language: java
 
+jdk:
+  - openjdk14
+
 addons:
   sonarcloud:
     organization: "andreoss"
