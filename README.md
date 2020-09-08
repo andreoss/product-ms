@@ -1,4 +1,6 @@
 # product-ms
+[![Build Status](https://travis-ci.org/andreoss/product-ms.svg?branch=master)](https://travis-ci.org/andreoss/product-ms)
+
 Sample microservice which uses Spring Data JDBC and has REST endpoint
 
 # Build
