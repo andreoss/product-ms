@@ -4,7 +4,9 @@ plugins {
 	id 'org.asciidoctor.convert' version '1.5.8'
 	id 'java'
 	id 'jacoco'
+    id "org.sonarqube" version "3.0"
 }
+
 
 group = 'org.sdf'
 version = '0.0.1-SNAPSHOT'
@@ -14,6 +16,12 @@ configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "andreoss_product-ms"
+    }
 }
 
 repositories {
